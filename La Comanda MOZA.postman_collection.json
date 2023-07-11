@@ -1,0 +1,1351 @@
+{
+	"info": {
+		"_postman_id": "799f0abd-c357-46e3-acf8-7a23a472eb97",
+		"name": "La Comanda MOZA",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "/usuarios",
+			"item": [
+				{
+					"name": "GETs",
+					"item": [
+						{
+							"name": "/ (getAll)",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost/comandaV/app/usuarios/",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"path": [
+										"comandaV",
+										"app",
+										"usuarios",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "/{field}/{value} (GetAllBy)",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost/comandaV/app/usuarios/idArea/5",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"path": [
+										"comandaV",
+										"app",
+										"usuarios",
+										"idArea",
+										"5"
+									],
+									"query": [
+										{
+											"key": "",
+											"value": null,
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "first/{field}/{value} (GetFirstBy)",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost/comandaV/app/usuarios/first/idArea/5",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"path": [
+										"comandaV",
+										"app",
+										"usuarios",
+										"first",
+										"idArea",
+										"5"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "/acciones (GetAll todos)",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost/comandaV/app/usuarios/acciones",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"path": [
+										"comandaV",
+										"app",
+										"usuarios",
+										"acciones"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "/cantidadAcciones (GetAll todos)",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost/comandaV/app/usuarios/cantidadAcciones",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"path": [
+										"comandaV",
+										"app",
+										"usuarios",
+										"cantidadAcciones"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "/cantidadAccionesArea (GetAll todos)",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost/comandaV/app/usuarios/cantidadAccionesArea",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"path": [
+										"comandaV",
+										"app",
+										"usuarios",
+										"cantidadAccionesArea"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "/ingresos (GetAll todos)",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost/comandaV/app/usuarios/ingresos",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"path": [
+										"comandaV",
+										"app",
+										"usuarios",
+										"ingresos"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "ABM",
+					"item": [
+						{
+							"name": "/ (alta)",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "usuario",
+											"value": "cervecero25",
+											"type": "default"
+										},
+										{
+											"key": "clave",
+											"value": "cer222",
+											"type": "default"
+										},
+										{
+											"key": "idUsuarioTipo",
+											"value": "5",
+											"type": "default"
+										},
+										{
+											"key": "idArea",
+											"value": "4",
+											"type": "default"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost/comandaV/app/usuarios/",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"path": [
+										"comandaV",
+										"app",
+										"usuarios",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "/{id} (modificacion)",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"usuario\": \"cervecero2\",\r\n  \"clave\": \"cer222\",\r\n  \"idUsuarioTipo\": 5,\r\n  \"idArea\": 4\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost/comandaV/app/usuarios/19",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"path": [
+										"comandaV",
+										"app",
+										"usuarios",
+										"19"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "/{id} (baja)",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost/comandaV/app/usuarios/20",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"path": [
+										"comandaV",
+										"app",
+										"usuarios",
+										"20"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			],
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "/mesas",
+			"item": [
+				{
+					"name": "GETs",
+					"item": [
+						{
+							"name": "/ (getAll)",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost/comandaV/app/mesas/",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"path": [
+										"comandaV",
+										"app",
+										"mesas",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "/estados (getAllConEstados)",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost/comandaV/app/mesas/estados",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"path": [
+										"comandaV",
+										"app",
+										"mesas",
+										"estados"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "/{field}/{value} (GetAllBy)",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost/comandaV/app/mesas/id/3",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"path": [
+										"comandaV",
+										"app",
+										"mesas",
+										"id",
+										"3"
+									],
+									"query": [
+										{
+											"key": "",
+											"value": null,
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "first/{field}/{value} (GetFirstBy)",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost/comandaV/app/mesas/first/idMesaEstado/4",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"path": [
+										"comandaV",
+										"app",
+										"mesas",
+										"first",
+										"idMesaEstado",
+										"4"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "/masUsada",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost/comandaV/app/mesas/masUsada",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"path": [
+										"comandaV",
+										"app",
+										"mesas",
+										"masUsada"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "/masFacturo",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "desde",
+											"value": "2023-05-25",
+											"type": "default"
+										},
+										{
+											"key": "hasta",
+											"value": "2023-07-30",
+											"type": "default"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost/comandaV/app/mesas/masFacturo",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"path": [
+										"comandaV",
+										"app",
+										"mesas",
+										"masFacturo"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "/menosUsada",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost/comandaV/app/mesas/menosUsada",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"path": [
+										"comandaV",
+										"app",
+										"mesas",
+										"menosUsada"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "/menosFacturo",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost/comandaV/app/mesas/menosFacturo",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"path": [
+										"comandaV",
+										"app",
+										"mesas",
+										"menosFacturo"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "ABM",
+					"item": [
+						{
+							"name": "/ (alta)",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "descripcion",
+											"value": "mesa con velas",
+											"type": "default"
+										},
+										{
+											"key": "clave",
+											"value": "cer222",
+											"type": "default",
+											"disabled": true
+										},
+										{
+											"key": "idUsuarioTipo",
+											"value": "5",
+											"type": "default",
+											"disabled": true
+										},
+										{
+											"key": "idArea",
+											"value": "4",
+											"type": "default",
+											"disabled": true
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost/comandaV/app/mesas/",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"path": [
+										"comandaV",
+										"app",
+										"mesas",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "/{id} (modificacion)",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"usuario\": \"cervecero2\",\r\n  \"clave\": \"cer222\",\r\n  \"idUsuarioTipo\": 5,\r\n  \"idArea\": 4\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost/comandaV/app/mesas/19",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"path": [
+										"comandaV",
+										"app",
+										"mesas",
+										"19"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "/{id} (baja)",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost/comandaV/app/mesas/",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"path": [
+										"comandaV",
+										"app",
+										"mesas",
+										""
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			],
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "/productos",
+			"item": [
+				{
+					"name": "GETs",
+					"item": [
+						{
+							"name": "/ (getAll)",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost/comandaV/app/productos/",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"path": [
+										"comandaV",
+										"app",
+										"productos",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "/masPedido",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost/comandaV/app/productos/masPedido",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"path": [
+										"comandaV",
+										"app",
+										"productos",
+										"masPedido"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "/menosPedido",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost/comandaV/app/productos/menosPedido",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"path": [
+										"comandaV",
+										"app",
+										"productos",
+										"menosPedido"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "ABM",
+					"item": [
+						{
+							"name": "/ (alta)",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "usuario",
+											"value": "cervecero25",
+											"type": "default"
+										},
+										{
+											"key": "clave",
+											"value": "cer222",
+											"type": "default"
+										},
+										{
+											"key": "idUsuarioTipo",
+											"value": "5",
+											"type": "default"
+										},
+										{
+											"key": "idArea",
+											"value": "4",
+											"type": "default"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost/comandaV/app/productos/",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"path": [
+										"comandaV",
+										"app",
+										"productos",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "/{id} (modificacion)",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"usuario\": \"cervecero2\",\r\n  \"clave\": \"cer222\",\r\n  \"idUsuarioTipo\": 5,\r\n  \"idArea\": 4\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost/comandaV/app/productos/19",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"path": [
+										"comandaV",
+										"app",
+										"productos",
+										"19"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "/{id} (baja)",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost/comandaV/app/productos/",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"path": [
+										"comandaV",
+										"app",
+										"productos",
+										""
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			],
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "/pedidos",
+			"item": [
+				{
+					"name": "GETs",
+					"item": [
+						{
+							"name": "/ (getAll)",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost/comandaV/app/pedidos/",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"path": [
+										"comandaV",
+										"app",
+										"pedidos",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "/{field}/{value} (GetAllBy)",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost/comandaV/app/pedidos/codigo/73ueu",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"path": [
+										"comandaV",
+										"app",
+										"pedidos",
+										"codigo",
+										"73ueu"
+									],
+									"query": [
+										{
+											"key": "",
+											"value": null,
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "first/{field}/{value} (GetFirstBy)",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost/comandaV/app/pedidos/first/idPedidoEstado/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"path": [
+										"comandaV",
+										"app",
+										"pedidos",
+										"first",
+										"idPedidoEstado",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "/bandeja",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost/comandaV/app/pedidos/bandeja",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"path": [
+										"comandaV",
+										"app",
+										"pedidos",
+										"bandeja"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "/seguimiento/{codigoMesa}/{codigoPedido}",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "codigoMesa",
+											"value": "T2lrA",
+											"type": "default",
+											"disabled": true
+										},
+										{
+											"key": "codigoPedido",
+											"value": "PuO49",
+											"type": "default",
+											"disabled": true
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost/comandaV/app/pedidos/seguimiento/T2lrA/PuO49",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"path": [
+										"comandaV",
+										"app",
+										"pedidos",
+										"seguimiento",
+										"T2lrA",
+										"PuO49"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "ABM",
+					"item": [
+						{
+							"name": "/ (alta)",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"codigoMesa\": \"OkwTQ\",\r\n  \"nombreCliente\": \"Grondona\",\r\n    \"listPedidoDetalle\": [\r\n    { \"idProducto\": 1,\r\n    \"cantidadProducto\": 1 },\r\n    { \"idProducto\": 2,\r\n    \"cantidadProducto\": 2 },\r\n    { \"idProducto\": 5,\r\n    \"cantidadProducto\": 1 },\r\n    { \"idProducto\": 6,\r\n    \"cantidadProducto\": 1 }\r\n  ]\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost/comandaV/app/pedidos/",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"path": [
+										"comandaV",
+										"app",
+										"pedidos",
+										""
+									],
+									"query": [
+										{
+											"key": "",
+											"value": null,
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "/{id} (modificacion)",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"codigoMesa\": \"T2lrA\",\r\n  \"nombreCliente\": \"Pepe Argento\",\r\n    \"listPedidoDetalle\": [\r\n    { \"idProducto\": 2,\r\n    \"cantidadProducto\": 3 }\r\n  ]\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost/comandaV/app/pedidos/15",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"path": [
+										"comandaV",
+										"app",
+										"pedidos",
+										"15"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "/{id} (baja)",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost/comandaV/app/pedidos/15",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"path": [
+										"comandaV",
+										"app",
+										"pedidos",
+										"15"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "/foto (agregar)",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "codigoPedido",
+									"value": "zA5tc",
+									"type": "default"
+								},
+								{
+									"key": "image",
+									"type": "file",
+									"src": "/C:/xampp/htdocs/HAMBURGUESERIA/ImagenesDeLaVenta/2023/simple_completa_pepe_20230619.png"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost/comandaV/app/pedidos/foto",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"comandaV",
+								"app",
+								"pedidos",
+								"foto"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/detalle/{idPedidoDetalle} UPDATE",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"idPedidoEstado\": 6,\r\n  \"tiempoEstimado\": 10\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost/comandaV/app/pedidos/detalle/41",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"comandaV",
+								"app",
+								"pedidos",
+								"detalle",
+								"41"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "/reportes",
+			"item": [
+				{
+					"name": "/pedidos",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost/comandaV/app/reportes/pedidos",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"comandaV",
+								"app",
+								"reportes",
+								"pedidos"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "/encuesta",
+			"item": [
+				{
+					"name": "/encuesta (guardar)",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "codigoMesa",
+									"value": "T2lrA",
+									"type": "default"
+								},
+								{
+									"key": "codigoPedido",
+									"value": "PuO49",
+									"type": "default"
+								},
+								{
+									"key": "puntajeMesa",
+									"value": "7",
+									"type": "default"
+								},
+								{
+									"key": "puntajeRestaurante",
+									"value": "7",
+									"type": "default"
+								},
+								{
+									"key": "puntajeMozo",
+									"value": "7",
+									"type": "default"
+								},
+								{
+									"key": "puntajeCocinero",
+									"value": "7",
+									"type": "default"
+								},
+								{
+									"key": "comentario",
+									"value": "Me fue como el siete",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost/comandaV/app/encuesta",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"comandaV",
+								"app",
+								"encuesta"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/puntajeSuperior/{puntaje} (getAllBy)",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost/comandaV/app/encuesta/puntajeSuperior/5",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"comandaV",
+								"app",
+								"encuesta",
+								"puntajeSuperior",
+								"5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/puntajeInferior/{puntaje} (getAllBy)",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost/comandaV/app/encuesta/puntajeInferior/8",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"comandaV",
+								"app",
+								"encuesta",
+								"puntajeInferior",
+								"8"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "usuario",
+							"value": "mozo1",
+							"type": "default"
+						},
+						{
+							"key": "clave",
+							"value": "mo111",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/comandaV/app/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"comandaV",
+						"app",
+						"login"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": [
+			{
+				"key": "token",
+				"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2ODkwNjEwMjcsImV4cCI6MjI5Mzg2MTAyNywiYXVkIjoiZTc2Y2JmMWEyOTZiOGM3NTEwNzc4ZGM2MzEyNDZmYzRlMTBjNjRjMiIsImRhdGEiOnsiaWRVc3VhcmlvIjo1LCJ1c3VhcmlvIjoibW96bzEiLCJjbGF2ZSI6Im1vMTExIn0sImFwcCI6IlRlc3QgSldUIn0.3OWhV4YKnURjitX7Qv0Zv3NKCrmTdlaAKUd5oqeR04I",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
